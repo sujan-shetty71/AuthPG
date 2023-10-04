@@ -1,0 +1,97 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrap {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.wrap-button{
+  position: relative; 
+  display: flex;
+  width:10cm;
+  height: 50%;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  border-radius: 100px;
+  box-shadow: 12px 12px 24px rgba(79, 209, 197, .64);
+}
+.qr-code-container {
+  /* margin-left: 20cm; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.loader-overlay {
+  position: absolute;
+  /* top: 45%;
+  left: 72%; */
+  transform: translate(-50%, -50%); /* Center the loader both horizontally and vertically */
+  z-index: 1;
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 0.5s linear infinite;
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.header{
+  color: white;
+}
+
+.button {
+  margin-top: 1cm;
+  width: 80%;
+  height: 20%;
+  color: #313133;
+  background: #4FD1C5;
+  background: linear-gradient(90deg, rgba(129, 230, 217, 1) 0%, rgba(79, 209, 197, 1) 100%);
+  border: none;
+  border-radius: 100px;
+  box-shadow: 12px 12px 24px rgba(79, 209, 197, .64);
+  transition: all 0.3s ease-in-out 0s;
+}
+.btn1{
+  border-radius: 4px;
+ width: 50%;
+ height: 50%;
+}
+.button1 {
+  margin-top: 1cm;
+  width: 80%;
+  height: 20%;
+  color: #313133;
+  background: #4FD1C5;
+  background: linear-gradient(90deg, rgba(129, 230, 217, 1) 0%, rgba(79, 209, 197, 1) 100%);
+  border: none;
+  border-radius: 100px;
+  box-shadow: 12px 12px 24px rgba(79, 209, 197, .64);
+  transition: all 0.3s ease-in-out 0s;
+}
+.qr-code {
+  width: 250px;
+  height: 250px;
+  border: 3px solid black;
+  border-radius: 5px;
+  border-width: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
